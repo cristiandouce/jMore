@@ -3,8 +3,10 @@
 jQuery "expand-collapse" plugin made simplier.
 
 ## Installation
-  Place the following line right after jQuery.
-      <script type="text/javascript" scr="/path/to/your/js/jMore.js"></script>
+Place the following line right after jQuery.
+```html
+<script type="text/javascript" scr="/path/to/your/js/jMore.js"></script>
+```
 
 ### Requirements
 
