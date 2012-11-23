@@ -90,17 +90,17 @@ console.log('asdasd')
       this.$element
       .mouseenter(function() {
         self.$element
-        .css({
+        .animate({
           overflowY: 'auto',
-          maxHeight: 'none'
-        });
+          maxHeight: self.$element.prop('scrollHeight')
+        }, 150);
       })
       .mouseleave(function() {
         self.$element
-        .css({
+        .animate({
           overflowY: 'hidden',
           maxHeight: 200
-        });
+        }, 150);
       });
     }
   };
