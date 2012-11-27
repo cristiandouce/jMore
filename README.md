@@ -12,24 +12,31 @@ Place the following line right after jQuery.
 
 * [jQuery v1.8.3+](http://jquery.com/)
 
-## Example
+## Examples
 
+### Triggers on Click (default)
 ```js
 $('div.jMore').jMore({
-  collapsedHeight: 200, //px
+  collapsedHeight: 200, //pixels
   collapsedText: "Show more",
   expandedText: "Show less"
 });
 ```
 
-## API
+### Triggers on Hover
+```js
+$('div.jMore').jMore({
+  triggerOnHover: true
+});
+```
 
-TODO
+## Options
 
-## TODO
-* Handle options on initialize (make initial height and backbground colors parameters)
-* Make overlay a parameter too (and allow user to set its bg color).
-* Allow "show more" and "show less" buttons, make it optional being hover show default.
+### collasedHeight: Number
+### collapsedText: String
+### expandedText: String
+### triggerOnHover: Boolean
+
 
 # License 
 
