@@ -77,6 +77,7 @@
     constructor: More,
 
     init: function () {
+      if(this.$element.prop('scrollHeight') <= this.settings.collapsedHeight) return;
       // render required html and styles
       this.render();
 
@@ -109,13 +110,13 @@
         overflowY: 'hidden'
       });
 
-      if(!this.settings.triggerOnHover && (this.$element.prop('scrollHeight') > this.settings.collapsedHeight) ) this._addButtons();
+      if(!this.settings.triggerOnHover) this._addButtons();
     },
 
     bindEvents: function () {
       var self = this;
       
-      if(!this.settings.triggerOnHover && (this.$element.prop('scrollHeight') > this.settings.collapsedHeight) ) {
+      if(!this.settings.triggerOnHover) {
 
         this.$element
         .find('.jmore-button-expand')
